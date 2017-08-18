@@ -1,0 +1,82 @@
+body{
+	margin:0px;
+	padding:0px;
+}
+
+.wrap-content-header{
+	height:50px;
+	border-bottom : 3px solid #ffb900;
+}
+.wrap-content-footer{
+	position:fixed;
+	bottom:0px;
+	left:0px;
+	height:30px;
+	width:100%;
+	text-align:center;
+	border-top : 3px solid #ffb900;
+	background-color:#F5F5F5;
+	z-index:9999;
+}
+
+
+.wrap-content::after {
+	clear:both;
+}
+
+.wrap-content-right{
+	float:left;
+	width:75%;
+
+}
+
+.wrap-content-left{
+	margin-left:75%;
+	position:relative;
+
+}
+
+.wrap-content-login{
+	margin-left:50px;
+	width:80%;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}

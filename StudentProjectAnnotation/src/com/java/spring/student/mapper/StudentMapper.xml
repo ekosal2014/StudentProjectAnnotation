@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.java.spring.student.mapper.StudentMapper">
+	<resultMap type="com.java.spring.student.model.Student" id="student">
+		<id property="student_id" column="student_id"/>
+		<result property="student_code" column="student_code"/>
+		<result property="password" column="password"/>
+		<result property="fullName" column="fullname"/>
+		<result property="gender" column="gender"/>
+		<result property="phone" column="phone"/>
+		<result property="home_phone" column="home_phone"/>
+		<result property="email" column="email"/>
+		<result property="address" column="address"/>
+		<result property="date_of_birth" column="date_of_birth"/>
+		<result property="photo" column="	photo"/>
+		<result property="sts" column="sts"/>
+	</resultMap>
+	<select id="login" resultType="student" parameterType="String">
+		SELECT * FROM st_student
+		WHERE student_code = #{username }
+	</select>
+</mapper>
