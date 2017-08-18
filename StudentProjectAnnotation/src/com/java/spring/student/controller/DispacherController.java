@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import com.java.spring.student.service.StudentService;
 
 @Controller
-public class StudentController {
+public class DispacherController {
 	
 	@Autowired
 	private StudentService studentService;
@@ -21,7 +21,6 @@ public class StudentController {
 	
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
 	public String getLogin(){
-		//System.out.println(" =============== "+studentService.login("000000002").getFullName()+" ==============");
 		return "login";
 	}
 }

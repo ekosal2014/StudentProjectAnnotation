@@ -18,7 +18,7 @@
 						<c:url var="loginUrl" value="/login" />
 						<form action="${loginUrl}" method="post" class="form-horizontal">
 						  <div class="imgcontainer">
-								<img src="image/users.png" alt="Avatar" class="avatar">
+								<img src="${pageContext.request.contextPath }/static/student/icon/users.png" alt="Avatar" class="avatar">
 						  </div>
 		
 						  <div class="container">
