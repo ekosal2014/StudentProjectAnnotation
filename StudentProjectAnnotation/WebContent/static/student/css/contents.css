@@ -1,0 +1,246 @@
+body{
+	margin:0px;
+	padding:0px;
+	overflow-x: hidden;
+	background-color: #3c434e;
+	font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif,DefaultFont,"DaunPenh (Body)";
+    font-weight: 400;
+    line-height: 1.5;
+    color: #333;
+}
+
+.wrap-content-header{
+	height:50px;
+	border-bottom : 3px solid #ffb900;
+	background-color:white;
+}
+.wrap-content-footer{
+	position:fixed;
+	bottom:0px;
+	left:0px;
+	height:30px;
+	width:100%;
+	text-align:center;
+	border-top : 3px solid #ffb900;
+	background-color:#F5F5F5;
+	z-index:9999;
+}
+
+.wrap-content::after {
+	clear:both;
+}
+
+.wrap-content-right{
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 210px;
+    background-color: #3c434e;
+}
+.wrap-content-menu{
+	color:#fff;
+}
+.wrap-content-menu ul{
+	margin : 0px 0 0 30px;
+}
+.wrap-content-menu a{
+	color:#fff;
+	font-size:12px;
+	padding : 3px 0px;
+}
+
+.wrap-content-left{
+	position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 210px;
+	background-color:white;
+}
+
+.class-title{
+	color:#fff;
+	padding:10px 0 5px 10px;
+	font-size:20px;
+	font-weight:bold;
+}
+
+.table-teacher .tile-box{
+	line-height: inherit;
+    display: block;
+    position: relative;
+    height: 70px;
+    padding: 0;
+    text-align: left;
+    border-width: 1px;
+    border-style: solid;
+	color: #fff;
+    border-color: #28b779;
+    background: #28b779;
+	width:300px;
+	margin: 25px 0 0 25px;
+	float:left;
+}
+.table-student .tile-box{
+	line-height: inherit;
+    display: block;
+    position: relative;
+    height: 70px;
+    padding: 0;
+    text-align: left;
+    border-width: 1px;
+    border-style: solid;
+	color: #fff;
+    border-color: #28b779;
+	width:170px;
+	margin: 15px 0 0 7px;
+	float:left;
+}
+table {
+	padding:0px;
+	border-spacing:0px;
+	border-collapse: collapse;
+	margin:0px;
+}
+table tr td{
+	padding:0px;
+}
+.class-setting{
+	float:right;
+	margin: 25px 0 0 0;
+	
+}
+ul{
+	padding:0px;
+	margin:0px;
+}
+.tile-content-wrapper ul li {
+	list-style:none;
+	font-size:12px;
+	line-height:15px;
+}
+.bs-badge,.tile-header,.tile-content-wrapper{
+	float:left;
+	height:100%;
+	text-align:center;
+}
+.bs-badge{
+	width:100px;
+	padding-top:20px;
+}
+.tile-header{
+	width:60px;
+	text-align:center;
+	padding-top:10px;
+}
+.tile-content-wrapper{
+	width:140px;
+	padding-top:10px;
+	text-align:left;
+}
+#student-title{
+	margin: 25px 0 0 25px;
+}
+.wrap-content-controll{
+	padding : 10px;
+	min-width: 940px;
+}
+.wrap-student-footer{
+	position:relative;
+	margin:100px 0 0 25px;
+	height:auto;
+	z-index:9999;
+}
+.class-header-controll{
+	width:300px;
+	text-align:center;
+}
+.class-header-controll table {
+	width:100%;
+	text-align:center;
+}
+.class-summary{
+	float:right;
+	right:35px;
+	position:absolute;
+	bottom:0;
+	text-align:right;
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+.model{
+	position: fixed;
+    z-index: 10000;
+    padding-top: 10%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #2A3F54;
+    width: auto;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+.modal-header {
+    padding: 2px 16px;
+    background-color: #2A3F54;
+    color: white;
+}
+.modal-header div{
+	height:30px;
+	padding-top:10px;
+}
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #2A3F54;
+    color: white;
+}
+.modal-footer div{
+	height:30px;
+	padding-top:10px;
+}
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.t-center{
+	text-align:center;
+}
