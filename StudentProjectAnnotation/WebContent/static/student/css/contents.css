@@ -1,7 +1,7 @@
 body{
 	margin:0px;
 	padding:0px;
-	overflow-x: hidden;
+	/* overflow-x: hidden; */
 	background-color: #3c434e;
 	font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif,DefaultFont,"DaunPenh (Body)";
     font-weight: 400;
@@ -9,10 +9,21 @@ body{
     color: #333;
 }
 
+.wrap-content{
+	position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+}
+
 .wrap-content-header{
 	height:50px;
 	border-bottom : 3px solid #ffb900;
 	background-color:white;
+	position: relative;
+	z-index: 9999;
 }
 .wrap-content-footer{
 	position:fixed;
@@ -37,6 +48,7 @@ body{
     left: 0;
     width: 210px;
     background-color: #3c434e;
+    z-index: 9998;
 }
 .wrap-content-menu{
 	color:#fff;
@@ -51,14 +63,20 @@ body{
 }
 
 .wrap-content-left{
+	position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0px;
+	background-color:white;
+}
+.wrap-content-left-inner{
 	position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 210px;
-	background-color:white;
 }
-
 .class-title{
 	color:#fff;
 	padding:10px 0 5px 10px;
@@ -145,6 +163,8 @@ ul{
 .wrap-content-controll{
 	padding : 10px;
 	min-width: 940px;
+	background-color: white;
+	position: relative;
 }
 .wrap-student-footer{
 	position:relative;
